@@ -182,13 +182,13 @@ def render(image,reduce,threshold):
     pixels=reduceSize(pixels,reduce)
     pixels=onlyEdges(pixels,threshold)
     print(toASCII(pixels))
-    renderImage(pixels,"outline-"+image)
+    renderImage(pixels,"outlines/outline-"+image.split("/")[1])
 
-render("american-gothic.jpg",5,40)
+render("images/american-gothic.jpg",5,40)
 
-render("mona-lisa.jpg",10,19)
-render("pinkfloyd.jpg",4,50)
-render("einstein.png",3,30)
+render("images/mona-lisa.jpg",10,19)
+render("images/pinkfloyd.jpg",4,50)
+render("images/einstein.png",3,30)
 
 
-render("wave.png",2,45)
+render("images/wave.png",2,45)
